@@ -1,0 +1,24 @@
+{
+  "profiles": [
+    {
+      "userId": 12345,
+      "seeking": "werwer",
+      "offering": "werwer",
+      "tags": "werwerwer",
+      "first_name": "Иван",
+      "last_name": "Иванов",
+      "username": "ivan_ivanov",
+      "photo_url": ""
+    },
+    {
+      "userId": 99999,
+      "seeking": "dwwer",
+      "offering": "werwer",
+      "tags": "werwer",
+      "first_name": "Тестовый",
+      "last_name": "Пользователь",
+      "username": "test_user",
+      "photo_url": ""
+    }
+  ]
+}
