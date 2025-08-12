@@ -16,11 +16,10 @@ await db.read();
 const app = express();
 const port = process.env.PORT || 3000;
 
-const corsOptions = {
-  origin: 'https://https://qosilim.vercel.app/', // <-- ВАШ URL С VERCEL
-  optionsSuccessStatus: 200 
-};
-app.use(cors(corsOptions));
+// Временно разрешаем запросы с любого источника для отладки
+app.use(cors({
+  origin: '*'
+}));
 app.use(express.json());
 
 // --- ИЗМЕНЕНИЕ ЗДЕСЬ: Новый маршрут для получения всех профилей ---
