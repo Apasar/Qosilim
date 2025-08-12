@@ -28,7 +28,7 @@ const saveProfile = async () => {
     };
 
     try {
-        const response = await fetch('https://qoslim.onrender.com/api/profile', {
+        const response = await fetch('https://qosilim.onrender.com/api/profile', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(profileData),
@@ -50,7 +50,7 @@ const saveProfile = async () => {
 
 const fetchProfiles = async () => {
     try {
-        const response = await fetch('https://qoslim.onrender.com/api/profiles');
+        const response = await fetch('https://qosilim.onrender.com/api/profiles');
         if (!response.ok) throw new Error('Ошибка сети');
         const profiles = await response.json();
         otherProfiles.value = profiles.filter(p => p.userId !== user.value.id);
